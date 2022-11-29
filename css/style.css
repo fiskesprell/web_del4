@@ -39,10 +39,10 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-areas:"header header header" 
-                        "left main right"
-                        "footer footer footer";
-    grid-template-columns: auto auto auto;
+    grid-template-areas:"header" 
+                        "main"
+                        "footer";
+    grid-template-columns: auto;
 }
 
 
@@ -103,6 +103,11 @@ div header section h1{
 .card-image{
     height: 200px;
     width: 200px;
+}
+
+.card-image-parent{
+    display: flex;
+    align-items: center;
 }
 
 /* share buttons */
@@ -362,6 +367,8 @@ footer a{
 }
 
 
+/* BREAKPOINT 1 - <800  */
+
 @media only screen and (max-width: 800px){
 
     .grid-container{
@@ -407,17 +414,23 @@ footer a{
         padding: 0;
     }
     main section{
-        width: 350px;
+        min-width: 450px;
+        max-width: 450px;
     }
     
     main article{
-        width: 350px;
+        min-width: 450px;
+        max-width: 450px;
     }
 
     /* Footer */
     footer{
         display:flex;
         justify-content: center;
+    }
+
+    footer a{
+        padding: 16px;
     }
 
     /* Tabell */
@@ -591,25 +604,78 @@ footer a{
     /* KONTAKT-Siden */
     
     #kontakt-map{
-        width: 350px;
-        height: 250px;
+        width: 425px;
     }
+
     /* KONTAKT-SKJEMA */
     #kontaktskjema{
         flex-wrap: nowrap;
     }
+
     #fornavn{
-        width: 330px;
+        width: 425px;
     }
+
     #etternavn{
-        width: 330px;
+        width: 425px;
     }
+
     #e-post{
         width: 330px;
     }
+
+    #brukermelding{
+        width: 425px;
+    }
+
+}
+
+/* BREAKPOINT 2 mindre mobiler */
+@media only screen and (max-width: 500px){
+
+    /* main */
+    main section{
+        min-width: 350px;
+        max-width: 350px;
+    }
+    
+    main article{
+        min-width: 350px;
+        max-width: 350px;
+    }
+
+    .card-image{
+        height: 150px;
+        width: 150px;
+    }
+    
+    /* kontakt side elementer */
+
+    #kontakt-map{
+        width: 327px;
+        height: 250px;
+    }
+
+    #kontaktskjema{
+        flex-wrap: nowrap;
+    }
+
+    #fornavn{
+        width: 330px;
+    }
+
+    #etternavn{
+        width: 330px;
+    }
+
+    #e-post{
+        width: 330px;
+    }
+
     #brukermelding{
         width: 330px;
         height: 200px;
     }
+    
 
 }

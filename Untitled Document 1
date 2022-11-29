@@ -1,14 +1,37 @@
 Notater til Web_Del4
 
 Current mission:
-- alle sider skal ha 'cards' (WIP)
-- Implementasjonen skal være tilpasset hver side.
-- CMS (OK)
-- MAIN (OK)
-- UU vs SEO (OK)
-- ANALYSE
-- KONTAKT OSS (OK)
+SOSIAL MEDIA
+- Legg til 'cards' på ANALYSE siden
+- Legg til delingsknapper på ANALYSE siden
 
-- alle sider skal ha delingsknapper (OK)
+BREAKPOINTS
+- Legg til et til breakpoint (OK, maybe work more on it but after everything else)
 
-- FINN UT HVORFOR CSS FILEN IKKE FUNKER PÅ NETTSIDEN
+
+ANALYSE
+
+Heuretisk vurdering av følgene sider:
+
+- Analysere SEO
+- Analysere UU
+- Analysere Homepage
+- Analysere Kontakt oss
+- Lag 'Analyse' side med tabell over analyse og endringer
+
+- Lag 'Tilgjenglighetsærklaring'
+Tilgjengelighetserklæring: Dere kan bruke malen fra uutilsynet, i kolonnen som heter «svaret som skal angis» skriver dere hvilke nivå av kravet dere oppfyller og hvor, eksempel: A – gitt alt tekst til alle bildene som ikke er pynt.
+-- Minimumskrav til 'tilgjenglighetsærklaring' --
+-- minst 3 A-krav, 3 AA-krav og 1 AAA-krav     --
+-- Dette skal linkes opp fra 'analyse' siden   --
+-------------------------------------------------
+
+- Ta screenshots av alt du vurderer
+- Skriv ned alt du vurderer
+
+
+
+Steps:
+
+1. Finn ut hva slags redskap som skal brukes til analyse og vurderinger
+
