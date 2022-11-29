@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Roboto:wght@300&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OpenGraph card tags -->
+    <meta property="og:title" content="Hvordan du kan kontakte Jørgen fra JørgensFlotteNettside">
+    <meta property="og:description" content="Denne siden inneholder telefonnummer og alt annet
+    du trenger å vite for å komme i kontakt med Jørgen. Det er også et kart over hvor han befinner seg og et skjema du kan fylle ut
+    for å sende han en melding.">
+    <meta property="og:url" content="file:///home/yorg/Documents/web_del4/kontakt.html">
+    <meta property="og:image" content="bildebank/webstacks-WbOR54pzvLM-unsplash.jpg">
+    <meta property="og:image:alt" content="Bilde av en ring med plaster som alle har forskjellige teknologi-relaterte
+    ikoner som motiv.">
+    <meta property="og:site_name" content="Min flotte webutvikling eksamen">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="article">
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hvordan du kan kontakte Jørgen fra JørgensFlotteNettside">
+    <meta name="twitter:description" content="Denne siden inneholder telefonnummer og alt annet
+    du trenger å vite for å komme i kontakt med Jørgen. Det er også et kart over hvor han befinner seg og et skjema du kan fylle ut
+    for å sende han en melding.">
+    <meta name="twitter:site" content="@FakeNavnJegHarIkkeTwitter">
+    <meta name="twitter:creator" content="@FakeNavnIgjenHarFortsattIkkeTwitter">
+    <meta name="twitter:image" content="bildebank/webstacks-WbOR54pzvLM-unsplash.jpg">
+    <meta name="twitter:image:alt" content="Bilde av en ring med plaster som alle har forskjellige teknologi-relaterte
+    ikoner som motiv.">
+    <!--Stylesheets og ikoner-->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font_awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="font_awesome/css/brands.css" rel="stylesheet">
+    <link href="font_awesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Kontaktinformasjon</title>
+</head>
+<body>
+    <!--Facebook sin Javascript SDK-->
+    <!-- https://developers.facebook.com/docs/plugins/share-button/ -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="PRsZvxK3"></script>
+
+    <div class="grid-container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="header_logo"><a href="index.html"><i class="fa-solid fa-hippo"></i></a></li>
+                    <li><a href="index.html">HJEM</a></li>
+                    <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li><a href="kontakt.html">KONTAKT OSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <article>
+                <h1>Kontaktinformasjon</h1>
+                <h2>Telefon, e-post og faks</h2>
+                <ul>
+                    <li><i class="fa-solid fa-phone-volume"></i> 69 60 80 00</li>
+                    <li><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</li>
+                    <li><i class="fa-solid fa-fax"></i> 69 60 80 01</li>
+                </ul>
+                <h2>Postadresse</h2>
+                <ul>
+                    <li><i class="fa-solid fa-box"></i> Høgskolen i Østfold, Postboks 700, 1757 Halden</li>
+                </ul>
+                
+                <h2>Del oss gjerne videre!</h2>
+                <div class="sharing-buttons">
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p"></a>
+                </div>
+
+
+            </article>
+            <article>
+                <h2>Hvor befinner vi oss?</h2>
+                <p>Besøk oss gjerne på vår addresse i Halden!</p>
+                <ul>
+                    <li><i class="fa-solid fa-map-pin"></i> B R A Veien 4, 1757 Halden</li>
+                </ul>
+                <!-- OpenStreetMap -->
+                <iframe id="kontakt-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.339328289031984%2C59.124609141525774%2C11.362781524658205%2C59.134121748392225&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=16/59.1294/11.3511">View Larger Map</a></small>
+            </article>
+            <article id="kontaktskjema">
+                <h2>Send oss en melding da vel!</h2>
+                <form>
+                    <!-- brukerens melding -->
+                    <label for="brukermelding">Din melding til oss:</label>
+                    <textarea id="brukermelding" placeholder="Hei, jeg synes at..." required></textarea>
+                    <!-- Fornavn -->
+                    <label for="fornavn">Fornavn:</label>
+                    <input type="text" name="fornavn" id="fornavn" placeholder="Ola" required>
+                    <!-- Etternavn -->
+                    <label for="etternavn">Etternavn:</label>
+                    <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann" required>
+                    <!-- e-post adresse -->
+                    <label for="e-post">Din e-post adresse:</label>
+                    <input type="email" name="e-post" id="e-post" placeholder="eksempel@gmail.com" required>
+                    <!-- Knapp -->
+                    <button>Send inn</button>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <a href="https://www.instagram.com/janthomasofficial/">Følg vår instagram</a>
+            <a href="https://twitter.com/katyperry">Følg vår twitter</a>
+            <a href="kontakt.html">Kontakt oss!</a>
+        </footer>
+    </div>
+</body>
+</html>

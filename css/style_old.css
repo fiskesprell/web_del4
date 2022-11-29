@@ -1,0 +1,569 @@
+/* Fonts */
+
+h1, h2, h3, h4, h5{
+    font-family: 'Chivo', sans-serif;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(82, 82, 82)
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* Body */
+
+body{
+    background-color: #0c4767;
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas:"header" 
+                        "main"
+                        "footer";
+}
+
+
+/* Header */
+
+header{
+    grid-area: header;
+    background-image: url(../bildebank/unsplash_background.jpg);
+    background-color: #216869;
+    min-height: 185px;
+
+}
+
+header nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding-left: 0px;
+}
+
+header nav li{
+    padding: 1rem;
+    background-color:#1F2421;
+    border-radius: 30px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #a3c3d9;
+    font-size: 20px;
+}
+
+header section{
+    display: flex;
+    justify-content: center;
+}
+
+div header section h1{
+    padding: 1rem 3rem;
+    border: 2px solid #1F2421;
+    background-color:#a3c3d9;
+} 
+
+/* Main */
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    background-color: #e9ecf5;
+    border-radius: 10px;
+    margin: 1rem;
+    width: 700px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+main article ul li{
+    list-style: none;
+}
+
+main section{
+    display: flex;
+    background-color: #e9ecf5;
+    border-radius: 10px;
+    margin: 1rem;
+    gap: 1rem;
+    width: 700px;
+    padding: 10px;
+}
+
+article img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/**** KONTAKT-SIDEN ****/
+
+
+/* Kart */
+#kontakt-map{
+    width: 700px;
+    height: 350px;
+}
+
+/* KONTAKT-SKJEMA */
+#fornavn{
+    width: 250px;
+}
+#etternavn{
+    width: 250px;
+}
+#e-post{
+    width: 520px;
+}
+#brukermelding{
+    width: 680px;
+    height: 300px;
+}
+
+
+/* tabell */
+
+#tabell{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #1F2421
+}
+
+/* ruter generelt */
+
+.rute{
+    height: 175px;
+}
+
+.rute ul{
+    padding-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.rute p{
+    display: flex;
+    text-decoration: underline;
+    padding-left: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    justify-content: center;
+}
+
+
+/* individuelle ruter */
+
+#rute-1{
+    width: auto;
+    height: 170px;
+    background-color: #216869;
+}
+
+#rute-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 170px;
+    background-color: #216869;
+}
+
+#rute-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 170px;
+    background-color: #216869;
+}
+
+#rute-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 170px;
+    background-color: #216869;
+}
+
+#rute-4 h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#rute-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #49A078;
+}
+
+#rute-6{
+    width: auto;
+    background-color: #49A078;
+}
+
+#rute-7{
+    width: auto;
+    background-color: #49A078;
+}
+
+#rute-8{
+    width: auto;
+    background-color: #49A078;
+}
+
+#rute-9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #9CC5A1;
+}
+
+#rute-10{
+    width: auto;
+    background-color: #9CC5A1;
+}
+
+#rute-11{
+    width: auto;
+    background-color: #9CC5A1;
+}
+
+#rute-12{
+    width: auto;
+    background-color: #9CC5A1;
+}
+
+#rute-13{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #DCE1DE;
+    flex-direction: column;
+}
+
+#rute-13 h3{
+    margin: 5px;
+}
+
+#rute-14{
+    width: auto;
+    background-color: #DCE1DE;
+}
+#rute-15{
+    width: auto;
+    background-color: #DCE1DE;
+}
+#rute-16{
+    width: auto;
+    background-color:#DCE1DE;
+}
+
+/* Kun synlig i mobil-versjon */
+
+#rute-17, #rute-18, #rute-19, #rute-20, #rute-21, #rute-22, #rute-23, #rute-24{
+    display: none;
+}
+
+
+/* Footer */
+
+footer{
+    grid-area: footer;
+    background-color: #e9ecf5;
+    display:flex;
+    justify-content: center;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    color: #1f2421;
+    padding: 0.5rem 2rem;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    /* Font */
+    h2{
+        font-size: 23px;
+    } 
+
+    h3{
+        font-size: 18px;
+    }
+    
+    h4{
+        font-size: 16px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+
+
+    /* Header */
+
+    header nav ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 250px;
+        width: 300px;
+    }
+
+    header nav ul li{
+        text-align: center;
+    }
+
+    /* Main */
+    main{
+        padding: 0;
+    }
+    main section{
+        width: 350px;
+    }
+    
+    main article{
+        width: 350px;
+    }
+
+    /* Footer */
+    footer{
+        display:flex;
+        justify-content: center;
+    }
+
+    /* Tabell */
+    #tabell{
+        display: grid;
+        grid-template-columns: 120px auto;
+        background-color: #1F2421    }
+    
+    /* vis mobile-only rutene igjen */
+    #rute-17, #rute-18, #rute-19, #rute-20, #rute-21, #rute-22, #rute-23, #rute-24{
+        display: grid;
+    }
+
+    /* bytt farge venstre side av tabell */
+    #rute-2, #rute-3, #rute-4, #rute-18, #rute-19, #rute-20, #rute-22, #rute-23, #rute-24{
+        background-color: #f4bbd3;
+    }
+
+    /* bytt farge høyre side av tabell */
+    #rute-6, #rute-7, #rute-8, #rute-10, #rute-11, #rute-12, #rute-14, #rute-15, #rute-16{
+        background-color: #f1e4f3;
+    }
+
+    /* CMS-navn rutene */
+    #rute-1, #rute-5, #rute-9, #rute-13, #rute-17, #rute-21{
+        background-color: #e59aaf;
+    }
+
+    #rute-1{
+        display: none;
+    }
+    #rute-2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: auto; 
+        }
+    #rute-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: auto;    
+    }
+    #rute-4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: auto; 
+    }
+    #rute-5{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    #rute-6{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+    }
+    #rute-7{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4; 
+    }
+    #rute-9{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6; 
+    }
+    #rute-13{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 10; 
+    }
+
+    /* mobile-exclusive */
+    
+    #rute-17{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: auto;
+        height: 175px;
+    }
+    #rute-18{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    
+    }
+    #rute-19{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    #rute-20{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    #rute-22{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    
+    }
+    #rute-23{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 12;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    #rute-24{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 12;
+        grid-row-end: 13;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    /* fikse teksten i rutene */
+    #rute-24 h3, #rute-20 h3{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* KONTAKT-Siden */
+    
+    #kontakt-map{
+        width: 350px;
+        height: 250px;
+    }
+    /* KONTAKT-SKJEMA */
+    #kontaktskjema{
+        flex-wrap: nowrap;
+    }
+    #fornavn{
+        width: 330px;
+    }
+    #etternavn{
+        width: 330px;
+    }
+    #e-post{
+        width: 330px;
+    }
+    #brukermelding{
+        width: 330px;
+        height: 200px;
+    }
+
+}

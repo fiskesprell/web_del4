@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Roboto:wght@300&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OpenGraph card tags -->
+    <meta property="og:title" content="Lær om de forskjellige CMS-løsningene!">
+    <meta property="og:description" content="Denne siden inneholder 2 artikkler - en handler om forskjellen 
+    mellom tradisjonelle CMS-løsninger vs headless CMS-løsninger, i den andre kan du lære om hvilke typer CMS-løsninger som finnes">
+    <meta property="og:url" content="https://itstud.hiof.no/~jorgeho/h2022/cms.html">
+    <meta property="og:image" content="bildebank/stephen-phillips-hostreviews-co-uk-zs98a0DtKL4-unsplash.jpg">
+    <meta property="og:image:alt" content="Bilde av en laptop med CMS-systemet Wordpress åpnet">
+    <meta property="og:site_name" content="Min flotte webutvikling eksamen">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="article">
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lær om de forskjellige CMS-løsningene!">
+    <meta name="twitter:description" content="Denne siden inneholder 2 artikkler - en handler om forskjellen 
+    mellom tradisjonelle CMS-løsninger vs headless CMS-løsninger, i den andre kan du lære om hvilke typer CMS-løsninger som finnes">
+    <meta name="twitter:site" content="@FakeNavnJegHarIkkeTwitter">
+    <meta name="twitter:creator" content="@FakeNavnIgjenHarFortsattIkkeTwitter">
+    <meta name="twitter:image" content="bildebank/stephen-phillips-hostreviews-co-uk-zs98a0DtKL4-unsplash.jpg">
+    <meta name="twitter:image:alt" content="Bilde av en laptop med CMS-systemet Wordpress åpnet">
+    <!--Stylesheets og ikoner-->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font_awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="font_awesome/css/brands.css" rel="stylesheet">
+    <link href="font_awesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CMS</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="header_logo"><a href="index.html"><i class="fa-solid fa-hippo"></i></a></li>
+                    <li><a href="index.html">HJEM</a></li>
+                    <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li><a href="kontakt.html">KONTAKT OSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- TRAD VS HEADLESS (W)CMS -->
+            <article>
+                <h2>Tradisjonelt og Headless CMS-systemer - Hva er forskjellen?</h2>
+                <p>Det er flere forskjellige publiseringssystemer (engelsk: Content Management Systems, oftest forkortet til CMS).
+                Her snakker jeg om Web Content Management Systemer eller WCMS. Disse systemene er skapt for å gjøre det lettere for en eller flere brukere å administrere innholdet i som eksisterer 
+                i en nettside, en app, eller lignende.(<a href="#kilder">1</a>) I denne artikkelen skal jeg ta for meg hva "tradisjonelle" CMS-løsninger og 
+                "Headless" CMS-løsninger er, og hva som skiller dem.</p>
+
+                <h3>Tradisjonelle CMS-løsninger</h3>
+                <p>
+                    Med en tradisjonell CMS-løsning får du alt servert på et sølvfat. Det du trenger for å administrere og publisere innhold, det du trenger for å forandre farger og oppsett av nettsiden din, og en database som kan lagre alt du trenger. Alt sammen får du på ett og samme sted.(<a href="#kilder">2</a>)
+                </p>
+                <p>
+                    Tradisjonelle CMS-løsninger fokuserer hovedsaklig på å hjelpe brukere å skape  og administere nettsider. Måten alt er satt sammen i en pakke gjør at selv en person uten mye erfaring innenfor koding kan skape en nettside som både ser bra ut og fungerer bra.(<a href="#kilder">3</a>) Noen positive sider er at du ofte har muligheten til å velge din egen stil ut i fra en rekke ferdiglagde maler.(<a href="#kilder">4</a>) Det gjør at alt du trenger for å totalt endre utseende på nettsiden er et par tastetrykk. Du får også oftest muligheten til å installere utvidelser som kan legge til funksjonalitet du trenger eller hjelpe til med å øke sikkerheten på nettsiden din.(<a href="#kilder">5</a>)
+                </p>
+
+                <h3>Headless CMS-løsninger</h3>
+                <p>
+                    En headless CMS-løsning fokuserer i all hovedsak på C-en i Content management system. Her handler alt om innhold. Metaforikken som ligger bak headless er at innhold blir sett på som kroppen, og hodet er måten man presenterer dette innholdet.(<a href="#kilder">5</a>) Derfor har headless publiseringssystemer ingen innebygd måte vise frem innholdet det hjelper å administrere – det er din egen jobb å finne ut av hvordan du skal gjøre dette!
+                </p>
+                <p>
+                    Det en headless CMS-løsning mister i brukervennelighet gjør de opp for i skalerbarhet og fleksibilitet. Når det er deg selv som ansvaret for metoden du vil vise frem innhold har du muligheten til å få nettsiden din til å se ut nøyaktig slik som du vil. I motsetning til tradisjonelle CMS-løsninger er heller ikke låst til hva slags oppsett skaperen av systemet vil du skal bruke. Du kan derfor publisere innholdet ditt til nærmest hva som helst – ikke bare nettsider. Du kan sende det ut til mobilapplikasjoner, nettsider, til og med google chrome utvidelser(<a href="#kilder">3</a>). Da får du muligheten til å møte flere behov og rekke ut til de menneskene du har lyst til å nå.
+                </p>
+
+                <h4>Så hva er forskjellen?</h4>
+                <p><em>Her er noen forskjeller mellom Headless og Tradisjonelle CMS-løsninger.</em></p>
+                <h4>Forskjellig hvor mye du må gjøre selv</h4>
+                <p>
+                    Med tradisjonelle CMS løsninger får du alt på et sted og det meste satt opp for deg. Med headless-løsninger er det et krav om at du gjør mer selv. Som nevnt tidligere i artikkelen kan du lage en nettside med en tradisjonell CMS-løsning uten mye erfaring med koding. Men headless løsninger krever faktisk at du kan kode og sette opp en front-end selv, eller at du har utviklere som kan gjøre det for deg. Når du vil gjøre en endring i Tradisjonelle CMS-systemer kan du laste ned en utvidelse eller velge ut i fra forskjellige maler, mens i headless må alt dette også gjøres selv.
+                </p>
+                <h4>Forskjell i kostnadder</h4>
+                <p>
+                    Å sette opp en front-end og få det til å fungere med en headless-CMS løsning kommer til å koste deg. Om dette er noe du gjør selv kommer det til å koste deg tid, og om du må ansette andre til å gjøre det kan det fort koste deg mye penger også. Med en tradisjonel CMS-løsning blir dette gjort for deg og du kan derfor spare både tid og penger.
+                </p>
+                <h4>Forskjell i tilpasning</h4>
+                <p>
+                    Med en tradisjonel CMS-løsning sparer du kanskje tid og penger, men det er kun om du er fornøyd med de malene som er allerede er laget for deg. Headless CMS-løsninger er mer fleksible og kan forandres nøyaktig slik du vil, gitt at du har evnen og tiden til å forandre på det. Om du vil gjøre store forandringer etter å ha brukt en tradisjonel CMS-løsning kan det være at du må ty til å bytte hele systemet med et annet, noe som kan koste deg mer tid (og penger) enn om du hadde laget nettsiden din nøyaktig slik du ville i første omgang.(<a href="#kilder">3</a>)
+                </p>
+                <h4>Forskjellige platformer?</h4>
+                <p>
+                    En annen stor forskjell er at hvor Tradisjonelle CMS-løsninger kun kobles opp mot nettsider, kan headless CMS-løsninger kobles opp og brukes med hva du vil. Du kan for eksempel publisere innholdet ditt til en nettside, TV-applikasjon, en nettleserutvidelse og en mobil-app. Dette er noe du ikke kan gjøre med en tradisjonell CMS-løsning.
+                </p>
+                <h3>Konklusjon</h3>
+                <p>
+                    Om du har lyst til å lage en enklere nettside – som for eksempel en personlig blogg, portfolio eller lignende – uten å bruke masse tid på å kode og designe hver lille detalj selv, så er det nok en tradisjonell CMS-løsning som er rett for deg. Da behøver du ikke investere mye penger og tid i oppsettet, og du kan få flotte nettsider uten å måtte sette deg inn i en hel hau av arbeid.
+                </p>
+                <p>
+                    Men om du på en annen side er veldig opptatt av å gjøre alt selv, fikse design til den minste detalj eller har et stort firma som trenger å nå så mange plattformer som mulig, eller liker å ha muligheten til å endre på ting i etterkant – ville jeg anbefalt å gå for en headless CMS-løsning.
+                </p>
+                
+                <h3 id="kilder">Kilder:</h3>
+                <nav>
+                    <ol>
+                        <li><a href="https://no.wikipedia.org/wiki/Publiseringssystem">https://no.wikipedia.org/wiki/Publiseringssystem</a></li>
+                        <li><a href="https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms">https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms</a></li>
+                        <li><a href="https://medium.com/tribalscale/headless-vs-traditional-cms-which-is-better-3388bd6311b1">https://medium.com/tribalscale/headless-vs-traditional-cms-which-is-better-3388bd6311b1</a></li>
+                        <li><a href="https://www.udig.com/digging-in/traditional-cms-vs-headless-cms/">https://www.udig.com/digging-in/traditional-cms-vs-headless-cms/</a></li>
+                        <li><a href="https://enonic.com/no/cms-publiseringssystem-ultimat-guide">https://enonic.com/no/cms-publiseringssystem-ultimat-guide</a></li>           
+                    </ol>
+                </nav>
+                <h2>Del denne artikkelen?</h2>
+                <div class="sharing-buttons">
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p"></a>
+                </div>
+            </article>
+
+            <!-- FORSKJELLIGE TYPER CMS -->
+            <article>
+                <h2>Forskjellige typer CMS</h2>
+                <p>Det er flere forskjellige typer CMS som blir tatt i bruk i forskjellige og brukstilfeller. I denne artikkelen skal jeg kortfattet ta for meg:</p>
+                <ul>
+                    <li><a href="#CCMS">Component Content Management System (CCMS)</a></li>
+                    <li><a href="#DMS">Document Management System (DMS)</a></li>
+                    <li><a href="#ECM">Enterprise Content Management System (ECM)</a></li>
+                    <li><a href="#WCMS">Web Content Management System (WCMS)</a></li>
+                    <li><a href="#DAM">Digital Asset Management System (DAM)</a></li>
+                </ul>
+                <h3 id="CCMS">Component Content Management System (CCMS)</h3>
+                <p>
+                    Et Component Content Management System er et system som, istedenfor å lagre hele nettsider, bryter ned informasjonen i mindre biter eller 'komponenter'. Disse mindre bitene kan for eksempel være paragrafer, bilder, fulle artikler eller noe så lite som en setning.(<a href="#cms-type-kilder">1</a>) En grunn til at CCMS-løsninger gjør dette er for at det skal være lettere å kunne gjennbruke mindre deler av innholdet ditt som også kan være relevante på andre steder på nettsiden din. Dette kan gjøre at informasjonen din er konsistent gjennom alle sidene dine.(<a href="#cms-type-kilder">1</a>) Denne løsningen lar deg også bytte ut enkelte paragrafer når de viser seg å være utdaterte uten at det skal påvirke resten av innholdet på siden din.(<a href="#cms-type-kilder">2</a>) I tillegg har CCMS muligheten til å lagre metadata om de forskjellige komponentene slik at du kan se hva slags forhold dataen din har med hverandre og hvor de blir brukt, slik at det er lettere å søke gjennom nettsiden din.(<a href="#cms-type-kilder">3</a>)
+                </p>
+                <h3 id="DMS">Document Management System (DMS)</h3>
+                <p>
+                    Et Document Management System er et datasystem som lagrer kopier av elektroniske dokumenter og digitaliserte papir-dokumenter. DMS-løsninger lar deg kontrollere noe som ellers var fysiske dokumenter på en digital måte; du kan for eksempel bruke versjonkontrollering for å se på forskjeller mellom gamle og nye versjoner av et dokument - og gå tilbake til en eldre versjon dersom det er feil i den nye. DMS-løsninger lar deg også se hvem som har hatt tilgang til et dokument og hvor de har lest det fra, og lar deg samarbeide med flere om et og samme dokument. Dette systemet er ofte en komponent av en større løsning, som for eksempel i et Enterprise Content Management System.(<a href="#cms-type-kilder">4</a>)
+                </p>
+                <h3 id="ECM">Enterprise Content Management System (ECM)</h3>
+                <p>
+                    Enterprise Content Management Systemer eller ECM er en fellesbetegnelse på forskjellige systemer som blir tatt i bruk til å kontrollere dokumenter og transaksjoner innenfor selskaper. ECM blir tatt i bruk av selskaper for at ansatte lettere kan lese og dele dokumenter mellom hverandre. Hovedmålet er å hjelpe selskaper å samle all informasjon som kan være nyttig på et sted, og kunne få brukt denne informasjonen til å effektivisere selskapet.(<a href="#cms-type-kilder">5</a>) Som nevnt tidligere er ofte DMS en del av denne typen løsning, men andre løsninger som faller under ECM kan være systemer som hjelper ansatte med å for eksempel å analysere tall, ta imot feilrapportering, eller komme i kontakt med kunder.(<a href="#cms-type-kilder">6</a>)
+                </p>
+                <h3 id="WCMS">Web Content Management System (WCMS)</h3>
+                <p>
+                    Web Content Management Systemer er løsninger som er skapt for å gjøre det lettere for en eller flere brukere å administrere, legge til og endre innholdet i som eksisterer i en nettside. WCMS-løsninger gir deg muligheten til å se tidligere versjoner av nettsiden din, samarbeide med andre om  innhold, og kan automatisere de vanskligere delene av å lage en nettside for deg. (<a href="#cms-type-kilder">7</a>) Mer informasjon om WCMS ligger i artikkelen over.
+                </p>
+                <h3 id="DAM">Digital Asset Management System (DAM)</h3>
+                <p>
+                    Et Digital Asset Management System (DAM) er et system som er skapt for å lagre alle digitale eiendeler (assets) et selskap eller en organisasjon har. Med digitale eiendeler mener jeg lyd og bildefiler, dokumenter, prosjektfiler og lignende.(<a href="#cms-type-kilder">8</a>) Alt som er verdifult og kan bli gjenbrukt blir lagret sentralt, tilgjengliggjort og gjort søkbart ved hjelp av metadata.(<a href="#cms-type-kilder">9</a>) Dette er spessielt brukbart om du driver med kreativt arbeid som kunst, video-redigering og markedsføring. DAM systemer tar også bruk av versjonkontroll, bruker metadata for lettere søkbarhet, og har forskjellige tillatelsesnivåer slik at du selv kan velge hvem som har tilgang til de forskjellige eiendelene selskapet eller organisasjonen din har.(<a href="#cms-type-kilder">9</a>)
+                </p>
+                <h3 id="cms-type-kilder">Kilder:</h3>
+                <nav>
+                    <ol>
+                        <li><a href="https://www.g2.com/categories/component-content-management-systems">https://www.g2.com/categories/component-content-management-systems</a></li>
+                        <li><a href="https://hygraph.com/blog/what-is-a-component-content-management-system">https://hygraph.com/blog/what-is-a-component-content-management-system</a></li>
+                        <li><a href="https://www.rws.com/content-management/glossary-of-terms/component-content-management-system/">https://www.rws.com/content-management/glossary-of-terms/component-content-management-system/</a></li>
+                        <li><a href="https://www.aiim.org/what-is-document-imaging">https://www.aiim.org/what-is-document-imaging</a></li>
+                        <li><a href="https://www.techtarget.com/searchcontentmanagement/definition/enterprise-content-management-ECM">https://www.techtarget.com/searchcontentmanagement/definition/enterprise-content-management-ECM</a></li>   
+                        <li><a href="https://www.hyland.com/en/resources/terminology/enterprise-content-management/what-is-ecm">https://www.hyland.com/en/resources/terminology/enterprise-content-management/what-is-ecm</a></li>
+                        <li><a href="https://www.aiim.org/what-is-web-20">https://www.aiim.org/what-is-web-20</a></li>
+                        <li><a href="https://brandfolder.com/resources/what-is-digital-asset-management/">https://brandfolder.com/resources/what-is-digital-asset-management/</a></li>
+                        <li><a href="https://www.ibm.com/topics/digital-asset-management">https://www.ibm.com/topics/digital-asset-management</a></li>
+                    </ol>
+                </nav>
+                <h2>Del denne artikkelen?</h2>
+                <div class="sharing-buttons">
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p"></a>
+                </div>
+            </article>
+
+
+            <!-- TABELL -->
+            <article id="tabell">
+                <div id="rute-1" class="rute">
+                </div>
+
+                <div id="rute-2" class="rute">
+                    <h3>Fordeler</h3>
+                </div>
+
+                <div id="rute-3" class="rute">
+                    <h3>Ulemper</h3>
+                </div>
+                
+                <div id="rute-4" class="rute">
+                    <h3>Likheter</h3>
+                    <h3>/</h3> 
+                    <h3>Ulikheter</h3>
+                </div>
+                
+                <div id="rute-5" class="rute">
+                    <h3>WCMS</h3>
+
+                </div>
+                
+                <div id="rute-6" class="rute">
+                    <ul>
+                        <li>Raskere oppsett av nettsider</li>
+                        <li>Nyttige administrerings-verktøy</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-7" class="rute">
+                    <ul>
+                        <li>Kan være mindre tilpassbare</li>
+                        <li>Kan være en sikkerhetsfare om systemet du bruker blir hacket</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-8" class="rute">
+                    <p>Likheter</p>
+                    <ul>
+                        <li>Versjonkontrollering</li>
+                        <li>Verktøy til kollaberasjon</li>
+                    </ul>
+                    <p>Ulikheter</p>
+                    <ul>
+                        <li>Rettet mot nettsider</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-9" class="rute">
+                    <h3>CCMS</h3>
+                </div>
+                
+                <div id="rute-10" class="rute">
+                    <ul>
+                        <li>Lettere å spore hvordan innhold blir brukt</li>
+                        <li>Lettere å oppdatere seksjoner av nettsiden uten at det påvirke andre deler</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-11" class="rute">
+                    <ul>
+                        <li>Kan ta lang tid å implementere(<a href="#tabell-kilder">1</a>)</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-12" class="rute">
+                    <p>Likheter</p>
+                    <ul>
+                        <li>Versjonkontrollering</li>
+                        <li>Verktøy til kollaberasjon</li>
+                    </ul>
+                    <p>Ulikheter</p>
+                    <ul>
+                        <li>Lagrer informasjon i mindre deler</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-13" class="rute">
+                    <h3>DMS</h3>
+
+                </div>
+                
+                <div id="rute-14" class="rute">
+                    <ul>
+                        <li>Gir deg flere måter å håndtere fysiske dokumenter sammenlignet med ikke-digitale løsninger.</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-15" class="rute">
+                    <ul>
+                        <li>Dyrt og tidskrevende å scanne store mengder med fysiske dokumenter(<a href="#tabell-kilder">2</a>)</li>
+                    </ul>
+                </div>
+                
+                <div id="rute-16" class="rute">
+                    <p>Likheter</p>
+                    <ul>
+                        <li>Versjonkontrollering</li>
+                        <li>Verktøy til kollaberasjon</li>
+                    </ul>
+                    <p>Ulikheter</p>
+                    <ul>
+                        <li>Høyere fokus på digitalisering av fysisk media</li>
+                    </ul>
+                </div>
+
+                <!-- Hidden in desktop -->
+                <!--
+                <div id="rute-17" class="rute">
+                </div>
+                -->
+                <div id="rute-18" class="rute">
+                    <h3>Fordeler</h3>
+                </div>
+
+                <div id="rute-19" class="rute">
+                    <h3>Ulemper</h3>
+                </div>
+                
+                <div id="rute-20" class="rute">
+                    <h3>Likheter</h3>
+                    <h3>/</h3> 
+                    <h3>Ulikheter</h3>
+                </div>
+                <!--
+                <div id="rute-21" class="rute">
+                </div>
+                -->
+                <div id="rute-22" class="rute">
+                    <h3>Fordeler</h3>
+                </div>
+
+                <div id="rute-23" class="rute">
+                    <h3>Ulemper</h3>
+                </div>
+                
+                <div id="rute-24" class="rute">
+                    <h3>Likheter</h3>
+                    <h3>/</h3> 
+                    <h3>Ulikheter</h3>
+                </div>
+
+            </article>
+
+            <article>
+                <h3 id="tabell-kilder">Kilder til tabell:</h3>
+                <nav>
+                    <ol>
+                        <li><a href="https://www.author-it.com/blog/is-your-ccms-solution-right-sized-for-your-organization/">https://www.author-it.com/blog/is-your-ccms-solution-right-sized-for-your-organization/</a></li>
+                        <li><a href="https://www.enadoc.com/advantages-and-disadvantages-of-a-document-management-system/">https://www.enadoc.com/advantages-and-disadvantages-of-a-document-management-system/</a></li>
+                    </ol>
+                </nav>
+            </article>
+
+
+
+        </main>
+
+
+
+
+        <footer>
+            <a href="https://www.instagram.com/janthomasofficial/">Følg vår instagram</a>
+            <a href="https://twitter.com/katyperry">Følg vår twitter</a>
+            <a href="kontakt.html">Kontakt oss!</a>
+        </footer>
+    </div>
+</body>
+</html>
