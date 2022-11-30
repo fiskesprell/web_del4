@@ -11,7 +11,7 @@ BREAKPOINTS
 
 ANALYSE
 
-Heuretisk vurdering av følgene sider:
+vurdering av følgene sider:
 
 - Analysere SEO
 - Analysere UU
@@ -34,4 +34,58 @@ Tilgjengelighetserklæring: Dere kan bruke malen fra uutilsynet, i kolonnen som 
 Steps:
 
 1. Finn ut hva slags redskap som skal brukes til analyse og vurderinger
+
+    SEO
+Bruk følgende redskaper:
+- Lighthouse
+
+
+    UU
+
+Bruk følgende redskaper 
+- Lighthouse
+- WAVE
+
+
+    Heuristisk evaluering
+
+Bruk følgende nettside
+- https://www.nngroup.com/articles/ten-usability-heuristics/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

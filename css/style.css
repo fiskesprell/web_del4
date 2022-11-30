@@ -182,17 +182,54 @@ article img{
 
 /* KONTAKT-SKJEMA */
 #fornavn{
-    width: 250px;
+    width: 264px;
 }
 #etternavn{
-    width: 250px;
+    width: 264px;
 }
 #e-post{
-    width: 520px;
+    width: 534px;
 }
+
 #brukermelding{
-    width: 680px;
-    height: 300px;
+    max-width: 680px;
+    min-width: 680px;
+    min-height: 300px;
+}
+
+textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+button{
+    font-family: 'Overpass Mono', monospace;
+    font-size: 25px;
+    background-color: #0c4767;
+    color: #e9ecf5;
+    border-radius: 1rem;
+    /* font-weight: bold; */
+    padding: 0.5rem 3rem;
+    padding-top: 0.8rem;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#form-button{
+    display: flex;
+    justify-content: center;
 }
 
 /* tabell */
@@ -343,7 +380,7 @@ article img{
     background-color:#DCE1DE;
 }
 
-/* Kun synlig i mobil-versjon */
+/* Dette skal kun være synlig i mobil-versjon */
 
 #rute-17, #rute-18, #rute-19, #rute-20, #rute-21, #rute-22, #rute-23, #rute-24{
     display: none;
@@ -621,11 +658,13 @@ footer a{
     }
 
     #e-post{
-        width: 330px;
+        width: 425px;
     }
 
     #brukermelding{
-        width: 425px;
+        max-width: 425px;
+        min-width: 425px;
+        min-height: 300px;
     }
 
 }
@@ -651,6 +690,10 @@ footer a{
     
     /* kontakt side elementer */
 
+    h1{
+        font-size: 26px;
+    }
+
     #kontakt-map{
         width: 327px;
         height: 250px;
@@ -673,7 +716,8 @@ footer a{
     }
 
     #brukermelding{
-        width: 330px;
+        min-width: 330px;
+        max-width: 330px;
         height: 200px;
     }
     

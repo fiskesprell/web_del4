@@ -3,6 +3,7 @@
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,10 +40,6 @@
     <title>Kontaktinformasjon</title>
 </head>
 <body>
-    <!--Facebook sin Javascript SDK-->
-    <!-- https://developers.facebook.com/docs/plugins/share-button/ -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="PRsZvxK3"></script>
 
     <div class="grid-container">
         <header>
@@ -106,7 +103,9 @@
                     <label for="e-post">Din e-post adresse:</label>
                     <input type="email" name="e-post" id="e-post" placeholder="eksempel@gmail.com" required>
                     <!-- Knapp -->
-                    <button>Send inn</button>
+                    <div id="form-button">
+                        <button>SEND INN</button>
+                    </div>
                 </form>
             </article>
         </main>
