@@ -105,9 +105,14 @@ div header section h1{
     align-items: center;
 }
 
-#uu-image{
+#uu-image img{
     width: 200px; 
     height: 134px;
+}
+
+#cms-image img{
+    width: 200px;
+    height: 133px;
 }
 
 /* share buttons */
@@ -687,12 +692,15 @@ footer a{
         max-width: 350px;
     }
 
-    #uu-image{
+    #uu-image img{
         width: 150px; 
         height: 101px;
     }
 
-
+    #cms-image img{
+    width: 150px;
+    height: 100px;    
+    }
     
     /* kontakt side elementer */
 
