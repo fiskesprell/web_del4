@@ -101,8 +101,9 @@ div header section h1{
 /* Main */
 
 .card-image{
-    height: 200px;
-    width: 200px;
+    /* height: 200px; */
+    height: auto;
+    max-width: 200px;
 }
 
 .card-image-parent{
@@ -684,8 +685,8 @@ footer a{
     }
 
     .card-image{
-        height: 150px;
-        width: 150px;
+        height: auto;
+        max-width: 150px;
     }
     
     /* kontakt side elementer */
