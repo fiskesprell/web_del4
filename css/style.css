@@ -50,7 +50,7 @@ body{
 
 header{
     grid-area: header;
-    background-image: url(../bildebank/unsplash_background.jpg);
+    background-image: url(../bildebank/unsplash_background_desktop.webp);
     background-color: #216869;
     min-height: 185px;
 
@@ -435,6 +435,10 @@ footer a{
 
 
     /* Header */
+
+    header{
+        background-image: url(../bildebank/unsplash_background_mobile.webp);
+    }
 
     header nav ul{
         flex-direction: column;
