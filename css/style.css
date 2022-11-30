@@ -100,15 +100,14 @@ div header section h1{
 
 /* Main */
 
-.card-image{
-    /* height: 200px; */
-    height: auto;
-    max-width: 200px;
-}
-
 .card-image-parent{
     display: flex;
     align-items: center;
+}
+
+#uu-image{
+    width: 200px; 
+    height: 134px;
 }
 
 /* share buttons */
@@ -688,10 +687,12 @@ footer a{
         max-width: 350px;
     }
 
-    .card-image{
-        height: auto;
-        max-width: 150px;
+    #uu-image{
+        width: 150px; 
+        height: 101px;
     }
+
+
     
     /* kontakt side elementer */
 
