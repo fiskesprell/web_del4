@@ -113,6 +113,10 @@ article ul li{
     margin: 12px;
 }
 
+#kilde-lenker li a{
+    color: #3000b3;
+}
+
 article div ul li{
     margin: 5px;
 }
