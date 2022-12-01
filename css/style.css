@@ -106,13 +106,18 @@ div header section h1{
 }
 
 #uu-image img{
-    width: 200px; 
-    height: 134px;
+    width: 300px;
+    height: 201px;
 }
 
 #cms-image img{
-    width: 200px;
-    height: 133px;
+    width: 300px;
+    height: 200px;
+}
+
+#analyse-image img{
+    width: 300px;
+    height: 216px;
 }
 
 /* share buttons */
@@ -469,6 +474,22 @@ footer a{
         max-width: 450px;
     }
 
+    #uu-image img{
+        width: 200px; 
+        height: 134px;    
+    }
+
+    #cms-image img{
+        width: 200px;
+        height: 133px;
+    }
+
+    #analyse-image img{
+        width: 200px;
+        height: 144px;
+    }
+
+
     /* Footer */
     footer{
         display:flex;
@@ -701,6 +722,12 @@ footer a{
     width: 150px;
     height: 100px;    
     }
+
+    #analyse-image img{
+        width: 150px;
+        height: 144px;
+    }
+
     
     /* kontakt side elementer */
 
