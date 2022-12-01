@@ -113,6 +113,10 @@ article ul li{
     margin: 12px;
 }
 
+ol li{
+    color: #3000b3;
+}
+
 ol li a{
     color: #3000b3;
 }
