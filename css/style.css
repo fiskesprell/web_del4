@@ -115,10 +115,12 @@ article ul li{
 
 ol li{
     color: #3000b3;
+    background-color: #e9ecf5;
 }
 
 ol li a{
     color: #3000b3;
+    background-color: #e9ecf5;
 }
 
 article div ul li{
@@ -281,7 +283,7 @@ button:hover{
 
 .rute{
     height: 175px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .rute ul{
