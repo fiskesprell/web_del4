@@ -1,6 +1,22 @@
 *{
     box-sizing: border-box;
 }
+
+.skip-knapp{
+    font-family: 'Chivo', sans-serif;
+    left: 0%;
+    position: absolute;
+    background: #9CC5A1;
+    height: 50px;
+    padding: 20px;
+    opacity: 0%;
+    color:#1f2421;
+}
+
+  .skip-knapp:focus {
+    opacity: 100%;
+}
+
 /* Fonts */
 
 h1, h2, h3, h4, h5{
@@ -24,6 +40,8 @@ h4{
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 a{
@@ -113,6 +131,18 @@ article ul li{
     margin: 12px;
 }
 
+article a{
+    color: #3000b3;
+}
+
+.black-lists li{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
 ol li{
     color: #3000b3;
     background-color: #e9ecf5;
@@ -123,19 +153,25 @@ ol li a{
     background-color: #e9ecf5;
 }
 
-ul li{
-    color: #3000b3;
-    background-color: #e9ecf5;
-}
-
 ul li a{
     color: #3000b3;
-    background-color: #e9ecf5;
 }
-
 
 article div ul li{
     margin: 5px;
+}
+
+#wave-sbs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* RESIZING IMAGES BIG LARGE */
+
+picture img{
+    border-radius: 20px;
 }
 
 .card-image-parent{
@@ -156,6 +192,21 @@ article div ul li{
 #analyse-image img{
     width: 300px;
     height: 216px;
+}
+
+#lh-orig-score-img img{
+    width: 680px;
+    height: 419px;
+}
+
+#lh-orig-ytelse img{
+    width: 680px;
+    height: 811px;
+}
+
+#broken-form img{
+    width: 680px;
+    height: 478px;
 }
 
 /* share buttons */
@@ -212,11 +263,6 @@ main section{
     min-width: 700px;
     max-width: 700px;
     padding: 10px;
-}
-
-article img{
-    max-width: 200px;
-    max-height: 200px;
 }
 
 /**** KONTAKT-SIDEN ****/
@@ -313,6 +359,11 @@ button:hover{
     margin-top: 2px;
     margin-bottom: 2px;
     justify-content: center;
+}
+
+.rute-lenke{
+    color: #3000b3;
+    background-color: #e9ecf5;
 }
 
 
@@ -512,6 +563,16 @@ footer a{
         min-width: 450px;
         max-width: 450px;
     }
+    
+    #wave-sbs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* IMAGE RESIZING MEDIUM */
 
     #uu-image img{
         width: 200px; 
@@ -526,6 +587,21 @@ footer a{
     #analyse-image img{
         width: 200px;
         height: 144px;
+    }
+    
+    #lh-orig-score-img img{
+        width: 430px;
+        height: 265px;
+    }
+    
+    #lh-orig-ytelse img{
+        width: 430px;
+        height: 513px;
+    }
+
+    #broken-form img{
+        width: 430px;
+        height: 302px;
     }
 
 
@@ -752,6 +828,8 @@ footer a{
         max-width: 350px;
     }
 
+    /* IMAGE RESIZING SMALL */
+
     #uu-image img{
         width: 150px; 
         height: 101px;
@@ -767,6 +845,20 @@ footer a{
         height: 108px;
     }
 
+    #lh-orig-score-img img{
+        width: 330px;
+        height: 203px;
+    }
+
+    #lh-orig-ytelse img{
+        width: 330px;
+        height: 203px;
+    }
+
+    #broken-form img{
+        width: 330px;
+        height: 232px;
+    }
     
     /* kontakt side elementer */
 
