@@ -105,6 +105,18 @@ div header section h1{
 
 /* Main */
 
+article ol li{
+    margin: 12px;
+}
+
+article ul li{
+    margin: 12px;
+}
+
+article div ul li{
+    margin: 5px;
+}
+
 .card-image-parent{
     display: flex;
     align-items: center;
