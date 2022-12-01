@@ -123,6 +123,17 @@ ol li a{
     background-color: #e9ecf5;
 }
 
+ul li{
+    color: #3000b3;
+    background-color: #e9ecf5;
+}
+
+ul li a{
+    color: #3000b3;
+    background-color: #e9ecf5;
+}
+
+
 article div ul li{
     margin: 5px;
 }
