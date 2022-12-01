@@ -236,6 +236,7 @@ button{
     /* font-weight: bold; */
     padding: 0.5rem 3rem;
     padding-top: 0.8rem;
+    margin: 10px;
 }
 
 button:hover{
