@@ -508,6 +508,11 @@ footer a{
 
 @media only screen and (max-width: 800px){
 
+    .skip-knapp{
+        display: none;
+    }
+
+
     .grid-container{
         grid-template-areas:"header" 
                             "main"
@@ -852,12 +857,12 @@ footer a{
 
     #lh-orig-ytelse img{
         width: 330px;
-        height: 203px;
+        height: 294px;
     }
 
     #broken-form img{
         width: 330px;
-        height: 232px;
+        height: 237px;
     }
     
     /* kontakt side elementer */
