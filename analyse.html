@@ -8,12 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En side som analyserer prosessen man må gå gjennom for å optimalisere nettsteder.">
-
-
-
-
-
-
+    <!-- OpenGraph card tags -->
+    <meta property="og:title" content="Artikkel som dokumenter en analyse av nettsiden Jørgens Flotte Nettside">
+    <meta property="og:description" content="Denne siden inneholder en artikkel som dokumenterer en analyse av nettsiden Jørgens Flotte Nettside.
+    Det er dokumentert hvilke redskaper jeg brukte og hva slags problemer de hjalp å løse.">
+    <meta property="og:url" content="https://itstud.hiof.no/~jorgeho/h2022/analyse.html">
+    <meta property="og:image" content="bildebank/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg">
+    <meta property="og:image:alt" content="Illustrasjon av en skjerm som kjører forskjellige analyseprogrammer">
+    <meta property="og:site_name" content="Min flotte webutvikling eksamen">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="article">
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="En side som analyserer prosessen man må gå gjennom for å optimalisere nettsteder.">
+    <meta name="twitter:description" content="Denne siden inneholder en artikkel som dokumenterer en analyse av nettsiden Jørgens Flotte Nettside.
+    Det er dokumentert hvilke redskaper jeg brukte og hva slags problemer de hjalp å løse.">
+    <meta name="twitter:site" content="@FakeNavnJegHarIkkeTwitter">
+    <meta name="twitter:creator" content="@FakeNavnIgjenHarFortsattIkkeTwitter">
+    <meta name="twitter:image" content="bildebank/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg">
+    <meta name="twitter:image:alt" content="Illustrasjon av en skjerm som kjører forskjellige analyseprogrammer">
+    <!--Stylesheets og ikoner-->
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="font_awesome/css/fontawesome.css" rel="stylesheet">
     <link href="font_awesome/css/brands.css" rel="stylesheet">
@@ -119,7 +133,7 @@
                     <img src="analyse_bilder/small/onlineimageresize_com_link_mellomrom_fr.png" alt="Bilde av at det var lite mellomrom mellom lenkene på CMS-siden.">
                 </picture>
                 <p>Etter:</p>
-                <picture id="wave-analyse-list">
+                <picture id="link-spacing-after">
                     <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_link_mellomrom_etter.png">
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_link_mellomrom_etter.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_link_mellomrom_etter.png" alt="Bilde av at mellomrommet mellom lenkene på CMS-siden har blitt større.">
@@ -141,7 +155,7 @@
                 <p>
                 Jeg fikk også en feilmelding om at fargen på lenkene mine ikke hadde stor nok kontrast. Dette kan være et problem for folk med synsproblemer som kan ha vanskeligheter med å skille mellom tekst og bakgrunn når fargene ligner på hverandre. For å løse dette inspiserte jeg nettsiden på med nettleseren <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>. Denne nettleseren har en fargevelger som også lar deg se på kontrastverdien mellom det du bytter farge på og bakgrunnen. Jeg byttet til en farge som hadde et kontrastforhold på 10, som er langt innenfor <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#contrast-minimum"> UU Tilsynet sitt minimumskrav på et kontrastforhold på 4.5</a>.
                 </p>
-                <picture id="wave-analyse-list">
+                <picture id="color-picker">
                     <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_color_picker_links.png">
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_color_picker_links.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_color_picker_links.png" alt="Bilde av Firefox sin fargevelger funksjon. Den viser også at kontrastverdien er 10.01 og at det fyller AAA krav for tilgjenglighet.">
@@ -165,7 +179,7 @@
                         <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_wave_cms.png">
                         <img src="analyse_bilder/small/onlineimageresize_com_wave_cms.png" alt="Bilde av WAVE sin liste med feil. 2 kontrastfeil og 7 mindre viktige feil.">
                     </picture>
-                    <picture id="wave-analyse-example">
+                    <picture id="wave-in-browser">
                         <source media="(min-width:800px)" srcset="analyse_bilder/small/onlineimageresize_com_wave_cms_2.png">
                         <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_wave_cms_2.png">
                         <img src="analyse_bilder/small/onlineimageresize_com_wave_cms_2.png" alt="Bilde av hvordan WAVE visuelt viser hvilken type feil finnes på nettsiden din, og hvor feilene er plassert.">
@@ -188,7 +202,7 @@
                 Regel 5 sier at man skal prøve så godt man kan å forhindre at brukeren kan gjøre noe feil på siden din. Jeg la merke til at på skjemaet på kontakt-siden har man muligheten til å endre størrelse på meldings-boksen. Når jeg endret denne til å bli bredere enn jeg hadde satt, så forandret det også på hvor 'send inn' knappen var plassert, og gjorde at nettsiden så styggere ut. Jeg la derfor til en fast bredde på denne boksen slik at brukeren fortsatt kan gjøre den større for å skrive mer tekst, men ikke på en måte som ødelegger designet eller påvirker andre elementer på en negativ måte.
                 </p>
                 <p>Før:</p>
-                <picture id="broken-form-img">
+                <picture id="broken-form">
                     <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_form_broken.png">
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_form_broken.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_form_broken.png" alt="Bilde av en tekstboks som er utvidet til å gå utenfor rammene til en artikkel. Send Inn knapp og tekst har blitt flyttet til steder de ikke skal være også.">
