@@ -34,7 +34,7 @@ h3{
 h4{
     font-size: 18px;
     font-style: italic;
-    color: rgb(82, 82, 82)
+    color: rgb(70, 70, 70)
 }
 
 p{
@@ -103,6 +103,11 @@ header nav li a{
     text-decoration: none;
     color: #a3c3d9;
     font-size: 20px;
+}
+
+header a{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 a:hover{
@@ -178,8 +183,36 @@ article div ul li{
     height: 81px;
 }
 
+button:focus{
+    outline-style: solid;
+    outline-color: darkblue;
+    outline-width: 10px;
+
+}
+
+textarea:focus{
+    outline-style: solid;
+    outline-color: darkblue;
+    outline-width: 5px;
+}
+
+input:focus{
+    outline-style: solid;
+    outline-color: darkblue;
+    outline-width: 5px;
+}
 
 /* RESIZING IMAGES BIG LARGE */
+
+.tabell-bilde{
+    width: 163px;
+    height: 175px;
+}
+
+.tabell-bilde-container{
+    display: flex;
+    justify-content: center;
+}
 
 picture img{
     border-radius: 20px;
@@ -408,6 +441,24 @@ button:hover{
     justify-content: center;
 }
 
+#vanlig-tekst-1{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#vanlig-tekst-2{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#vanlig-tekst-3{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 18px;
+}
+
 .rute-lenke{
     color: #3000b3;
     background-color: #e9ecf5;
@@ -541,6 +592,11 @@ footer{
     background-color: #e9ecf5;
     display:flex;
     justify-content: center;
+    flex-direction: column;
+}
+#sosiale-medier-footer{
+    display: flex;
+    justify-content: center;
 }
 
 footer a{
@@ -551,14 +607,16 @@ footer a{
 }
 
 
-/* BREAKPOINT 1 - <800  */
+/* BREAKPOINT for å slå av skip-knapp ved tablet størrelser*/
 
-@media only screen and (max-width: 800px){
-
+@media only screen and (max-width: 1215px){
     .skip-knapp{
         display: none;
     }
+}
 
+
+@media only screen and (max-width: 800px){
 
     .grid-container{
         grid-template-areas:"header" 
@@ -625,6 +683,7 @@ footer a{
 
 
     /* IMAGE RESIZING MEDIUM */
+
 
     #uu-image img{
         width: 200px; 

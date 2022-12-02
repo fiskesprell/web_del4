@@ -4,6 +4,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Roboto:wght@300&display=swap');
     </style>
+    <link rel="icon" href="icon/smile.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +67,7 @@
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_original_lighthouse_evaluation.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_original_lighthouse_evaluation.png" alt="Den første Lighthouse evalueringen min ytelse en 74 poeng, Tilgjenglighet 95 poeng, beste praksis 92 poeng og søkemotoroptimalisering 92 poeng.">
                 </picture>
-                <h3>Ytelse</h3>
+                <h3>Analyse av Ytelse</h3>
                 <p>
                 I følge Lighthouse var det minst optimaliserte ved nettsiden min ytelsen. Der var det tre problemer som kom opp.
                 </p>
@@ -101,7 +102,7 @@
                 Etter alt dette gikk Ytelses-poengsummen min fra 74 til 97 på kontakt- og innholdssidene mine. Den er 98 på index siden.
                 </p>
                 
-                <h3>Beste Praksis </h3>
+                <h3>Analyse av Beste Praksis </h3>
                 
                 <p>
                 Poengsummen jeg fikk i kategorien Beste Praksis var allerede ganske høy når jeg først analyserte nettsiden. Den eneste tilbakemeldingen jeg fikk var at bildene på siden helst skulle ha en definert størrelse. For å fikse dette redigerte jeg CSS-stilarket mitt til å inkludere bredden og høyden til de forskjellige bildene. En for fullskjerm, og to forskjellige størrelser basert på mindre skjermer som nettbrett og mobiltelefon.
@@ -110,7 +111,7 @@
                 Dette gjorde at poengsummen min i Beste Praksis gikk fra 92 til 100 på index- og innholdssidene. Poengsummen er 92 på kontakt-siden på grunn av at jeg har brukt en 'iframe' tag til å sette inn et kart. Grunnen til at dette gir mindre poengsum er at denne metoden står i fare for å bli utdatert og er noe som det kan bli fjernet støtte for i fremtiden. Derfor kan det hende at jeg må endre dette senere. Det er nok best å finne en nyere og bedre støttet metode å legge til kart, men jeg velger å la den stå som den er siden jeg synes det ser fint ut og kartet fungerer fortsatt bra for mine behov. 
                 </p>
                 
-                <h3>Søkemotoroptimalisering</h3>
+                <h3>Analyse av Søkemotoroptimalisering</h3>
                 
                 <p>
                 Under kategorien søkemotoroptimalisering kom det opp to feil.
@@ -139,11 +140,11 @@
                     <img src="analyse_bilder/small/onlineimageresize_com_link_mellomrom_etter.png" alt="Bilde av at mellomrommet mellom lenkene på CMS-siden har blitt større.">
                 </picture>
 
-
+                <p>
                 Etter disse rettelsene gikk poengsummen min til 100 på alle sidene
                 </p>
                 
-                <h3>Tilgjenglighet</h3>
+                <h3>Analyse av Tilgjenglighet</h3>
                 <ol class="black-lists">
                     <li>Jeg hadde ikke en 'Label' på flodhest-logoen min.</li>
                     <li>Jeg hadde ikke en 'Label' på deleknappene til de forskjellige sosiale mediene.</li>
@@ -164,7 +165,7 @@
                 Etter disse endringene ga lighthouse tilgjengligheten på nettsiden min en poengsum på 95 til 100 på index-, innhold- og kontakt-siden.
                 </p>
                 
-                <h3>WAVE-Analyse</h3>
+                <h3>Analyse med verktøyet WAVE</h3>
                 <p>
                 Når jeg ble ferdig med å analysere nettsiden min med Lighthouse sjekket jeg også siden min med  <a href="https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/">en nettleserutvidelse som heter WAVE</a>. Denne informerte meg om et par problemer som ikke ble plukket opp under analysen med Lighthouse. Det var veldig lite som ikke ble fanget opp av Lighthouse, så jeg fikk heldigvis lite å gjøre her.
                 </p>
@@ -188,7 +189,7 @@
                 <p>
                 Den første feilen har jeg gått igjenom tidligere i analysen så jeg velger å ikke repetere det her. Den ble løst på akkurat samme måte som tidligere. Den andre feilen var klassifisert som en 'liten' feil, på engelsk var det en 'Alert' og ikke en 'Error'. WAVE mente at jeg burde revurdere om jeg ville ha understrek på teksten i tabellen min. Jeg mener at det hjelper lesbarheten på tabellen, derfor velger jeg å la det stå. Lenkene som er lenket til flere ganger er en del av kravene på deleksamen 2, hvor det står at logoen skal lenke til index siden, og at vi i tillegg ha en hjem-lenke som gjør det samme. Det er ikke noe jeg kan fikse på, og det er heller ikke et reelt problem for siden.
                 </p>         
-                <h3>Heuristisk metode</h3>
+                <h3>Analyse ved bruk av Heuristisk metode</h3>
                 <p>
                 Til slutt gikk jeg gjennom <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen Norman Group sin artikkel</a> med 10 tommelfingerregeler man kan bruke til å vurdere en nettside. Jeg går kun gjennom de reglene jeg føler er mest relevant for denne siden, ut utelater resten.
                 </p>
@@ -219,10 +220,7 @@
                 <div id="skip-image-parent">
                     <img src="bildebank/navigasjon_skip_lenke.png" alt="Bilde av hvordan knappen som lar deg hoppe over navigasjon ser ut. Den er grønn med en tekst der det står 'Hopp over Navigasjon?'.">
                 </div>
-                <h3>Avsluttende</h3>
-                <p>
-                Gjennom denne analysen har jeg fått lært mye om bruk av forskjellige analyse-verktøy, og hvor mye baktanke som må til selv for en relativt enkel nettside som dette. Spesielt Lighthouse var et veldig hjelpsomt verktøy da den lenket til god informasjon som var rettet mot å fikse problemene som oppstod på siden. Det er et verktøy jeg definitivt kommer til å ta bruk av i fremtiden. Denne analysen har virkelig hjulpet meg å forbedre nettsiden min.
-                </p>
+                <h3>Resultater og avsluttende kommentarer</h3>
                 <p>
                     Mine lighthouse resultater for mobil versjonen av nettsiden min gikk fra:
                 </p>
@@ -234,26 +232,171 @@
                 </ul>
                 <p>Til:</p>
                 <ul>
-                    <li>74 i Ytelse / Performance</li>
-                    <li>95 i Tilgjenglighet / Accessibility</li>
-                    <li>92 i Beste praksis / Best Practices</li>
-                    <li>92 i Søkemotoroptimalisering / SEO</li>
+                    <li>97 i Ytelse / Performance</li>
+                    <li>100 i Tilgjenglighet / Accessibility</li>
+                    <li>100 i Beste praksis / Best Practices</li>
+                    <li>100 i Søkemotoroptimalisering / SEO</li>
                 </ul>
-
+                <p>For fullskjerm-versjonen av siden ser resultatene slik ut:</p>
+                <ul>
+                    <li>100 i Ytelse / Performance</li>
+                    <li>100 i Tilgjenglighet / Accessibility</li>
+                    <li>92 i Beste praksis / Best Practices</li>
+                    <li>100 i Søkemotoroptimalisering / SEO</li>
+                </ul>
+                <p>De endelige lighthouse resultatene for både mobil og fullskjerm ser veldig like ut som disse gjennom hele siden.</p>
+                <p>
+                    En endelig gjennomgang med WAVE-verktøyet viser heller ingen feil den klassifiserer som 'ERROR'. 
+                    Den viser noen ting jeg bør være OBS på, men dette er småting som den selv sier kan være riktig. 
+                    Den mener at man skal unngå å bruke understreker når det ikke trengs, da understreket tekst oftest betyr at det er
+                    en lenke. Jeg bruker understreket tekst i tabellene mine for å forbedre klarheten, så jeg mener at det er riktig på min side.
+                    I tillegg mener den at jeg har for lang alt-tekst på noen bilder, og at det kan være feil å legge til innhold som kun
+                    folk med skjermlesere får tilgang til. Jeg mener at alt-tekstene mine kun beskriver det som er avbildet, så jeg mener også
+                    at dette ikke er noe jeg behøver å rette på.
+                </p>
+                <p>
+                    Gjennom denne analysen har jeg fått lært mye om bruk av forskjellige analyse-verktøy, og hvor mye baktanke som må til selv for en relativt enkel nettside som dette. Spesielt Lighthouse var et veldig hjelpsomt verktøy da den lenket til god informasjon som var rettet mot å fikse problemene som oppstod på siden. Det er et verktøy jeg definitivt kommer til å ta bruk av i fremtiden. Denne analysen har virkelig hjulpet meg å forbedre nettsiden min.
+                </p>
 
                 <h2>Lyst til å dele denne artikkelen?</h2>
                 <div class="sharing-buttons">
                     <a href="#" class="fa-brands fa-twitter" aria-label="Delingsknapp for Twitter"></a>
-                    <a href="#" class="fa-brands fa-facebook"aria-label="Delingsknapp for Facebook"></a>
+                    <p>Del på Twitter</p>
+                    <a href="#" class="fa-brands fa-facebook" aria-label="Delingsknapp for Facebook"></a>
+                    <p>Del på Facebook</p>
                     <a href="#" class="fa-brands fa-pinterest-p" aria-label="Delingsknapp for Pintrest"></a>
+                    <p>Del på Pintrest</p>
                 </div>
+            </article>
+            <article id="tabell">
+                <div id="rute-1" class="rute">
+                </div>
+
+                <div id="rute-2" class="rute">
+                    <h3>Hva som ble endret</h3>
+                </div>
+
+                <div id="rute-3" class="rute">
+                    <h3>Før-bilde</h3>
+                </div>
+                
+                <div id="rute-4" class="rute">
+                    <h3>Etter-bilde</h3>
+                </div>
+                
+                <div id="rute-5" class="rute">
+                    <h3>Tekstboks med feil</h3>
+
+                </div>
+                
+                <div id="rute-6" class="rute">
+                    <p id="vanlig-tekst-1">Tekstboksen på analyse-siden hadde muligheten til å bli dratt ut så langt at det ødela andre elementer. Ved å begrense bredden løste jeg dette problemet.</p>
+                </div>
+                
+                <div id="rute-7" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/medium/onlineimageresize_com_form_broken.png"
+                        alt="Bilde av en tekstboks som er utvidet til å gå utenfor rammene til en artikkel. 
+                        Send Inn knapp og tekst har blitt flyttet til steder de ikke skal være også.">
+                    </div>
+                </div>
+                
+                <div id="rute-8" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/medium/onlineimageresize_com_form_normal.png"
+                        alt="Bilde av fikset tekstboks.">
+                    </div>
+                </div>
+                
+                <div id="rute-9" class="rute">
+                    <h3>Ikke nok linjeavstand mellom lenker</h3>
+                </div>
+                
+                <div id="rute-10" class="rute">
+                    <p id="vanlig-tekst-2">Størrelsen på margin top og bottom på listeelementer ble gjort større.</p>
+                </div>
+                
+                <div id="rute-11" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/medium/onlineimageresize_com_link_mellomrom_fr.png" alt="lenker med for lite linjeavstand">
+                    </div>
+                </div>
+                
+                <div id="rute-12" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/medium/onlineimageresize_com_link_mellomrom_etter.png" alt="lenker med fikset linjeavstand">
+                    </div>
+                </div>
+                
+                <div id="rute-13" class="rute">
+                    <h3>La til tittel på alle sider</h3>
+
+                </div>
+                
+                <div id="rute-14" class="rute">
+                    <p id="vanlig-tekst-3">For klarhetens skyld la jeg til en tekstboks som viser hvilken del av siden du er på i headeren.</p>
+                </div>
+                
+                <div id="rute-15" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/medium/onlineimageresize_com_cms_before_title.png" alt="Bilde av header området uten en boks med tittel.">
+                    </div>
+                </div>
+                
+                <div id="rute-16" class="rute">
+                    <div class="tabell-bilde-container">
+                        <img class="tabell-bilde" src="analyse_bilder/small/cms_logo.png" alt="Bilde av header området med en boks med tittel.">
+                    </div>
+                </div>
+
+                <!-- Hidden in desktop -->
+                <!--
+                <div id="rute-17" class="rute">
+                </div>
+                -->
+                <div id="rute-18" class="rute">
+                    <h3>Hva som ble endret</h3>
+                </div>
+
+                <div id="rute-19" class="rute">
+                    <h3>Før-bilde</h3>
+                </div>
+                
+                <div id="rute-20" class="rute">
+                    <h3>Etter-bilde</h3>
+                </div>
+                <!--
+                <div id="rute-21" class="rute">
+                </div>
+                -->
+                <div id="rute-22" class="rute">
+                    <h3>Hva som ble endret</h3>
+                </div>
+
+                <div id="rute-23" class="rute">
+                    <h3>Før-bilde</h3>
+                </div>
+                
+                <div id="rute-24" class="rute">
+                    <h3>Etter-bilde</h3>
+                </div>
+
+            </article>
+            <article>
+                <h2>Vår Tilgjenglighetserklæring</h2>
+                <p>Du kan laste ned vår Tilgjenglighetserklæring <a href="WCAG_tilgjenglighetserklæring.xlsx">ved å trykke her!</a></p>
+                <p>Malen som er brukt er tatt fra <a href="https://www.uutilsynet.no/tilgjengelighetserklaering/wcag-sjekkliste-utfylling-av-tilgjengelighetserklaering/1333">uutilsynet sine nettsider.</a></p>
             </article>
         </main>
 
+
         <footer>
-            <a href="https://www.instagram.com/janthomasofficial/">Følg vår instagram</a>
-            <a href="https://twitter.com/katyperry">Følg vår twitter</a>
-            <a href="kontakt.html">Kontakt oss!</a>
+            <div id="sosiale-medier-footer">
+                <a href="https://www.instagram.com/janthomasofficial/">Følg vår instagram</a>
+                <a href="https://twitter.com/katyperry">Følg vår twitter</a>
+                <a href="kontakt.html">Kontakt oss!</a>
+            </div>
+            <a href="WCAG_tilgjenglighetserklæring.xlsx">Last ned vår Tilgjenglighetserklæring</a>
         </footer>
     </div>
 </body>
