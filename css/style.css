@@ -220,6 +220,41 @@ picture img{
     height: 478px;
 }
 
+#fixed-form-img img{
+    width: 680px;
+    height: 488px;
+}
+
+#wave-in-browser img{
+    width: 680px;
+    height: 715px;
+}
+
+#color-picker img{
+    width: 680px;
+    height: 632px;
+}
+
+#wave-analyse-list img{
+    width: 680px;
+    height: 558px;
+}
+
+#link-spacing-after img{
+    width: 680px;
+    height: 282px;
+}
+
+#wave-analyse-list img{
+    width: 680px;
+    height: 214px;
+}
+
+#image-resizing-html img{
+    width: 680px;
+    height: 104px;
+}
+
 /* share buttons */
 .fa-brands{
     text-decoration: none;
@@ -619,7 +654,41 @@ footer a{
         width: 430px;
         height: 302px;
     }
+    
+    #wave-in-browser img{
+        width: 430px;
+        height: 452px;
+    }
+    
+    #color-picker img{
+        width: 430px;
+        height: 400px;
+    }
+    
+    #wave-analyse-list img{
+        width: 430px;
+        height: 353px;
+    }
+    
+    #fixed-form-img img{
+        width: 430px;
+        height: 309px;
+    }
 
+    #link-spacing-after img{
+        width: 430px;
+        height: 178px;
+    }
+
+    #wave-analyse-list img{
+        width: 430px;
+        height: 136px;
+    }
+
+    #image-resizing-html img{
+        width: 430px;
+        height: 65px;
+    }
 
     /* Footer */
     footer{
@@ -868,14 +937,49 @@ footer a{
 
     #lh-orig-ytelse img{
         width: 330px;
-        height: 294px;
+        height: 394px;
     }
 
     #broken-form img{
         width: 330px;
-        height: 237px;
+        height: 232px;
     }
     
+    #wave-in-browser img{
+        width: 330px;
+        height: 347px;
+    }
+
+    #color-picker img{
+        width: 330px;
+        height: 307px;
+    }
+    
+    #wave-analyse-list img{
+        width: 330px;
+        height: 271px;
+    }
+
+    #fixed-form-img img{
+        width: 330px;
+        height: 237px;
+    }
+
+    #link-spacing-after img{
+        width: 330px;
+        height: 137px;
+    }
+    
+    #wave-analyse-list img{
+        width: 330px;
+        height: 104px;
+    }
+
+    #image-resizing-html img{
+        width: 330px;
+        height: 50px;
+    }
+
     /* kontakt side elementer */
 
     h1{
