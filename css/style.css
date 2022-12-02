@@ -241,8 +241,12 @@ picture img{
 }
 
 #wave-analyse-list img{
-    width: 330px;
-    height: 271px;
+    width: 680px;
+    height: 214px;
+}
+
+#link-spacing-before img{
+
 }
 
 #image-resizing-html img{
@@ -675,7 +679,7 @@ footer a{
         height: 178px;
     }
 
-    #wave-analyse-list img{
+    #link-spacing-before img{
         width: 430px;
         height: 136px;
     }
@@ -942,7 +946,7 @@ footer a{
     
     #wave-in-browser img{
         width: 330px;
-        height: 347px;
+        height: 271px;
     }
 
     #color-picker img{
@@ -965,7 +969,7 @@ footer a{
         height: 137px;
     }
     
-    #wave-analyse-list img{
+    #link-spacing-before img{
         width: 330px;
         height: 104px;
     }
