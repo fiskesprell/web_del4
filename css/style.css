@@ -168,6 +168,17 @@ article div ul li{
     align-items: center;
 }
 
+#skip-image-parent{
+    display:flex;
+    justify-content: space-around;
+}
+
+#skip-image-parent img{
+    width: 330px;
+    height: 81px;
+}
+
+
 /* RESIZING IMAGES BIG LARGE */
 
 picture img{

@@ -67,12 +67,21 @@
                     <img src="analyse_bilder/small/onlineimageresize_com_performance_before_img_resizing.png" alt="Lighthouse sin evaluering av ytelsen på siden min. Den forklarer det samme som jeg listet tidligere.">
                 </picture>
                 <p>
-                Det første problemet var at bildet jeg brukte i 'header' området hadde alt for stor filstørrelse, noe som førte til at siden tok mye lengere å laste inn. I tillegg bruker dette mer data, noe som kan være et problem for folk med begrensede nettverk. Måten jeg fikset dette på var å bruke et bilderedigeringsprogram som heter <a href="https://www.gimp.org/">Gimp</a> til å skjære ned bildet til en mindre størrelse, på en måte der bildet kunne repeteres uten at det var særlig merkelig på større skjermer. Jeg konverterte også bildet fra filtypen .JPG til filtypen .WEBP for å forminkse filstørrelsen.
+                Det første problemet var at bildet jeg brukte i 'header' området hadde en enorm filstørrelse, noe som førte til at siden tok mye lengere å laste inn. I tillegg bruker dette mer data, noe som kan være et problem for folk med begrensede nettverk. Måten jeg fikset dette på var å bruke bilderedigeringsprogrammet <a href="https://www.gimp.org/">Gimp</a> til å skjære ned bildet til en mindre størrelse, på en måte der bildet kunne repeteres uten at det var særlig merkbart på større skjermer. Jeg konverterte også bildet fra filtypen .JPG til filtypen .WEBP for å forminkse filstørrelsen.
                 </p>
                 <p>
-                Det andre problemet var at bildene på artikkelkortene mine ikke hadde riktig størrelsesforhold. Det oppstod fordi jeg hadde hardkodet alle bildene til å være 200x200 piksler uten å tenke på at størrelsesforholdet ble forandret. Denne størrelsen hadde de på alle de tre brytepunktene. Artikkelkortbildene hadde også et lignende problem som header bildet ved at bildene var større enn det som faktisk ble vist på skjermen. For å fikse dette valgte jeg å igjen ta bruk av GIMP og skalerte bildene til tre forskjellige størrelser, en for fullskjerm, og to for forskjellige mobilstørrelser. Jeg konverterte også bildene til filtypen .WEBP. Så la jeg til brytepunkter i HTML koden min for å ta bruk av de mindre bildene når man skalerte ned skjermen. Etter dette var gjort fikk jeg en tilbakemelding om at bildet på fullskjerm versjonen til siden hadde for lav oppløsing. Prøvde å sette forskjellige størrelser, men følte selv at det ble stygt om jeg gjorde bildet større, så dette er noe jeg velger å ignorere.
+                Det andre problemet var at bildene på artikkelkortene mine på index-siden ikke hadde riktig størrelsesforhold. Det oppstod fordi jeg hadde hardkodet alle bildene til å være 200x200 piksler uten å tenke over hvordan dette forandret størrelsesforholdet. Denne størrelsen hadde alle bildene på alle brytepunkter. Artikkelkortbildene hadde også et lignende problem som header bildet ved at bildene var større enn det som ble vist på skjermen. For å fikse dette valgte jeg å igjen bruke <a href="https://www.gimp.org/">Gimp</a> for å skalere bildene til tre forskjellige størrelser, en for fullskjerm, og to for de forskjellige mobilstørrelsene. Jeg konverterte også bildene til filtypen .WEBP. Så la jeg til brytepunkter i HTML-koden for å ta bruk av de mindre bildene når man skalerte ned skjermen. 
+                </p>
+                <picture id="image-resizing-html">
+                    <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_image_resize_html.png">
+                    <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_image_resize_html.png">
+                    <img src="analyse_bilder/small/onlineimageresize_com_image_resize_html.png" alt="Skjermbilde av HTML-kode som viser hvordan jeg fikk nettsiden til å vise forskjellige bildestørrelser basert på størrelsen til skjermen som bruker nettsiden.">
+                </picture>
                 <p>
-                Det tredje og siste problemet var at nettstedet måtte laste inn mye ubrukt CSS. Dette er noe som også kan føre til at siden bruker mer data og tar lengere tid å laste inn riktig. Lighthouse pekte til CSS filen til <a href="https://fontawesome.com/start">Awesome ikon-pakken</a> jeg bruker for ikonene på siden. Jeg har ikke lyst til å røre gå inn og endre eller fjerne kode fra dette stilarket, dersom det kan få ikonene mine til å stoppe å fungere om jeg ikke er forsiktig. Derfor velger jeg å ikke gjøre noen endringer for å løse dette problemet.
+                Etter dette var gjort fikk jeg en tilbakemelding om at bildet på fullskjerm versjonen til siden hadde for lav oppløsing. Jeg satt forskjellige størrelser, men følte selv at det ble stygt om jeg gjorde bildet større, så dette er noe jeg velger å ignorere.
+                </p>
+                <p>
+                Det tredje og siste problemet var at nettstedet laster inn mye ubrukt CSS. Dette er noe som også kan føre til at siden bruker mer data og tar lengere tid å laste inn riktig. Lighthouse pekte til CSS filen til <a href="https://fontawesome.com/start">Awesome ikon-pakken</a> jeg bruker for ikonene på siden. Jeg har ikke lyst til å endre eller fjerne kode fra dette stilarket, da jeg tror at det kan få ikonene mine til å stoppe å fungere riktig om jeg ikke er forsiktig. Derfor velger jeg å ikke gjøre noen endringer for å løse dette problemet.
                 </p>
                 <p>
                 Etter alt dette gikk Ytelses-poengsummen min fra 74 til 97 på kontakt- og innholdssidene mine. Den er 98 på index siden.
@@ -81,7 +90,7 @@
                 <h3>Beste Praksis </h3>
                 
                 <p>
-                Poengsummen jeg fikk i kategorien Beste Praksis var allerede ganske høy når jeg først analyserte nettsiden. Den eneste tilbakemeldingen jeg fikk var at bildene på siden helst skulle ha en definert størrelse. For å fikse dette redigerte jeg CSS-stilarket mitt til å inkludere bredden og høyden til de forskjellige bildene. En for fullskjerm, en og to forskjellige størrelser basert på mindre skjermer som nettbrett og mobiltelefon.
+                Poengsummen jeg fikk i kategorien Beste Praksis var allerede ganske høy når jeg først analyserte nettsiden. Den eneste tilbakemeldingen jeg fikk var at bildene på siden helst skulle ha en definert størrelse. For å fikse dette redigerte jeg CSS-stilarket mitt til å inkludere bredden og høyden til de forskjellige bildene. En for fullskjerm, og to forskjellige størrelser basert på mindre skjermer som nettbrett og mobiltelefon.
                 </p>
                 <p>
                 Dette gjorde at poengsummen min i Beste Praksis gikk fra 92 til 100 på index- og innholdssidene. Poengsummen er 92 på kontakt-siden på grunn av at jeg har brukt en 'iframe' tag til å sette inn et kart. Grunnen til at dette gir mindre poengsum er at denne metoden står i fare for å bli utdatert og er noe som det kan bli fjernet støtte for i fremtiden. Derfor kan det hende at jeg må endre dette senere. Det er nok best å finne en nyere og bedre støttet metode å legge til kart, men jeg velger å la den stå som den er siden jeg synes det ser fint ut og kartet fungerer fortsatt bra for mine behov. 
@@ -90,30 +99,44 @@
                 <h3>Søkemotoroptimalisering</h3>
                 
                 <p>
-                Under kategorien søkemotoroptimalisering kom det opp fem feil.
+                Under kategorien søkemotoroptimalisering kom det opp to feil.
                 </p>
                 <ol class="black-lists">
                     <li>Jeg hadde ingen 'Meta Description' på siden min</li>
                     <li>Jeg hadde ikke en 'Title attribute' på formen på kontakt-siden</li>
                 </ol>
                 <p>
-                Lighthouse er et veldig kjekt verktøy ettersom det gir deg en lenke til nettsider som kan hjelpe deg fikse probleme dine. Ved å følge <a href="https://web.dev/meta-description/?utm_source=lighthouse&utm_medium=devtools">lenken den ga meg</a> fant jeg fort ut at alt som trengtes for å fikse problem #1 var å legge til en meta tag med atributtene name="description" og content="*beskrivelse av nettsiden min*" i de forskjellige HTML filene mine.
-                På lik linje la jeg kun til en 'title' attribute under 'iframe' taggen som inneholdt kartet mitt, og problemet var løst.
+                Lighthouse er et kjekt verktøy siden det gir deg lenker til ressurser som kan hjelpe deg fikse probleme dine. Ved å følge <a href="https://web.dev/meta-description/?utm_source=lighthouse&utm_medium=devtools">lenken den ga meg</a> fant jeg fort ut at alt som var nødvendig for å fikse problem #1 var å legge til en meta tag med atributtene name, hvor man skulle skrive 'description', og attributten content hvor man skriver en beskrivelse av nettstedet ditt. Jeg la dette til i head-området til alle html-filene på nettsiden.
+                Ved å legge til slike tagger kan både søkemotorer og brukere lettere få en idé om hva nettsiden din handler om, noe som også fører til at nettstedet ditt blir rangert høyere på søkemotorer. På lik linje la jeg til en 'title' attribute under 'iframe' taggen som inneholdt kartet mitt.
                 </p>
                 <p>
-                Det siste problemet var at de klikkbare elementene på siden min, lenker på artikkelsidene og send knappen på kontakt-siden, var for nære andre klikkbare elementer eller hverandre. Om forskjellige ting man kan klikke på er for nærme hverandre kan det bli vanskeliger å treffe det man har lyst til å trykke på, og det kan skape problemer. For å fikse dette økte jeg marginen, og derfor mellomrommet, mellom disse elementene.
-                <p>
-                På grunn av disse små rettelsene gikk poengsummen min til 100 på alle sidene
+                Det siste problemet var at de klikkbare elementene på siden min, som lenkene på artikkel-sidene og send-knappen på kontakt-siden, var for nære andre klikkbare elementer eller hverandre. Om forskjellige ting man kan klikke på er for nærme hverandre kan det bli vanskeliger å treffe det man har lyst til å trykke på. Det kan være ekstra vanskelig for folk med nedsatt motorikk kan det være ekstra vanskelig å komme seg frem til det man vil, og det skaper en dårlig brukeropplevelse og frustrasjon når man trykker på en lenke og ender opp på en annen. Derfor økte jeg marginen mellom disse elementene.
+                </p>
+                <p>Før:</p>
+                <picture id="wave-analyse-list">
+                    <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_link_mellomrom_fr.png">
+                    <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_link_mellomrom_fr.png">
+                    <img src="analyse_bilder/small/onlineimageresize_com_link_mellomrom_fr.png" alt="Bilde av at det var lite mellomrom mellom lenkene på CMS-siden.">
+                </picture>
+                <p>Etter:</p>
+                <picture id="wave-analyse-list">
+                    <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_link_mellomrom_etter.png">
+                    <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_link_mellomrom_etter.png">
+                    <img src="analyse_bilder/small/onlineimageresize_com_link_mellomrom_etter.png" alt="Bilde av at mellomrommet mellom lenkene på CMS-siden har blitt større.">
+                </picture>
+
+
+                Etter disse rettelsene gikk poengsummen min til 100 på alle sidene
                 </p>
                 
                 <h3>Tilgjenglighet</h3>
                 <ol class="black-lists">
-                    <li>Jeg hadde ikke en 'Label' på flodhest-logoen min</li>
-                    <li>Jeg hadde ikke 'Label' på deleknappene til de forskjellige sosiale mediene</li>
-                    <li>Fargene på lenkene mine har ikke stor nok kontrast i forhold til bakgrunn</li>
+                    <li>Jeg hadde ikke en 'Label' på flodhest-logoen min.</li>
+                    <li>Jeg hadde ikke en 'Label' på deleknappene til de forskjellige sosiale mediene.</li>
+                    <li>Fargene på lenkene mine hadde ikke stor nok kontrast i forhold til bakgrunnen.</li>
                 </ol>
                 <p>
-                Om man har ikoner som ikke har noen type tekst er det vanskelig for folk med synsvansker å finne ut av hva disse knappene faktisk gjør. Om du ikke kan lett se at dette ikonet er et facebook-ikon, og programmet som leser opp nettsider ikke har noe informasjon å gå etter for å forklare det til deg er det ikke mye du kan gjøre. Derfor måtte jeg legge til en atributt som heter 'aria-label' på ikonene jeg har lagt til som ikke hadde noen tekst ved siden av seg. Dette var relevant på navigasjonen i header, hvor jeg hadde en logo av en flodhest som kunne lenke til forsiden, og på alle innholdssidene hvor jeg hadde deleknapper til forskjellige sosiale medier. Etter jeg la til 'aria-label' og skrev en beskrivelse for hva knappene gjorde, så fikset jeg både feil #1 og feil #2.
+                Om man har ikoner som ikke har noen type tekst er det vanskelig for folk som bruker opplesningsverktøy å finne ut av hva disse knappene faktisk gjør. Om du ikke har en måte å se hvordan et ikon ser ut, og programmet som leser opp nettsider ikke har noe informasjon å gå etter, er det umulig å vite nøyaktig hva en knapp gjør eller hvor en lenke fører deg. Derfor måtte jeg legge til en atributt som heter 'aria-label' på de tekstløse ikonene jeg har på siden, noe som hjelper med å beskrive hva ikoner gjør. Dette var relevant på navigasjons-elementene i header, hvor jeg hadde en logo av en flodhest som kunne lenke til forsiden, og på alle innholdssidene hvor jeg hadde deleknapper til forskjellige sosiale medier. Etter jeg la til 'aria-label' og skrev en beskrivelse for hva knappene gjorde, så fikset jeg både feil #1 og feil #2.
                 </p>
                 <p>
                 Jeg fikk også en feilmelding om at fargen på lenkene mine ikke hadde stor nok kontrast. Dette kan være et problem for folk med synsproblemer som kan ha vanskeligheter med å skille mellom tekst og bakgrunn når fargene ligner på hverandre. For å løse dette inspiserte jeg nettsiden på med nettleseren <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>. Denne nettleseren har en fargevelger som også lar deg se på kontrastverdien mellom det du bytter farge på og bakgrunnen. Jeg byttet til en farge som hadde et kontrastforhold på 10, som er langt innenfor <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#contrast-minimum"> UU Tilsynet sitt minimumskrav på et kontrastforhold på 4.5</a>.
@@ -149,15 +172,14 @@
                     </picture>
                 </div>
                 <p>
-                Den første feilen har jeg gått igjenom tidligere i analysen så jeg velger å ikke repetere meg her. Den ble løst på akkurat samme måte som tidligere. Den andre feilen var klassifisert som en 'liten' feil, på engelsk en 'Alert' og ikke en 'Error'. WAVE mente at jeg burde revurdere om jeg ville ha understrek på teksten i tabellen min. Jeg mener at det hjelper lesbarheten på tabellen, derfor velger jeg å la det stå. Lenkene som er lenket til flere ganger er en del av kravene på deleksamen 1, hvor det står at vi skal la logoen lenke til index siden, og i tillegg ha en hjem-lenke som gjør det samme. Det er ikke noe jeg kan fikse på, og det er heller ikke et reelt problem for siden.
-                </p>
-                
+                Den første feilen har jeg gått igjenom tidligere i analysen så jeg velger å ikke repetere det her. Den ble løst på akkurat samme måte som tidligere. Den andre feilen var klassifisert som en 'liten' feil, på engelsk var det en 'Alert' og ikke en 'Error'. WAVE mente at jeg burde revurdere om jeg ville ha understrek på teksten i tabellen min. Jeg mener at det hjelper lesbarheten på tabellen, derfor velger jeg å la det stå. Lenkene som er lenket til flere ganger er en del av kravene på deleksamen 2, hvor det står at logoen skal lenke til index siden, og at vi i tillegg ha en hjem-lenke som gjør det samme. Det er ikke noe jeg kan fikse på, og det er heller ikke et reelt problem for siden.
+                </p>         
                 <h3>Heuristisk metode</h3>
                 <p>
                 Til slutt gikk jeg gjennom <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen Norman Group sin artikkel</a> med 10 tommelfingerregeler man kan bruke til å vurdere en nettside. Jeg går kun gjennom de reglene jeg føler er mest relevant for denne siden, ut utelater resten.
                 </p>
                 <p>
-                Regel 1 sier at man bør gi brukeren en klar indikasjon over hvor de har vært før, og hvordan de kom  frem til det punktet de er på nå. Her tenker jeg at jeg kunne laget en liten pil som viste at du har gått fra index-siden til de forskjellige innholdssidene, men dersom det lengste du kan komme fra hjemmesiden kun er ett steg, virket ikke dette nødvendig. Jeg valgte derimot å legge til en tittel på alle sidene for å vise hvilken side du faktisk leser på, dersom det ikke var en klar indikasjon på det utenom at brukeren sikkert kunne antydet det fra å lese artikkelteksten. Men denne måten tenkte jeg var raskere for øyet å se når man raskt skummer over.
+                Regel 1 sier at man bør gi brukeren en klar indikasjon over hvor de har vært før, og hvordan de kom  frem til det punktet de er på nå. Her tenker jeg at jeg kunne laget en liten pil som viste at du har gått fra index-siden til de forskjellige innholdssidene, men dersom det lengste du kan komme fra hjemmesiden kun er ett steg, virket ikke dette nødvendig. Jeg valgte derimot å legge til en tittel på alle sidene for å vise hvilken side du faktisk er på, dersom det ikke var en klar indikasjon på det utenom å tvinge brukeren til å antyde det fra å lese artikkelteksten. Dette kan hjelpe brukere raskt finne ut av hvilken side de har kommet til når de skummer over siden.
                 </p>
                 <p>
                 Regel 2 sier at man skal helst unngå å bruke terminologi som kan være ukjent for leseren. Jeg merker at i teksten du leser nå så bruker jeg forskjellig terminologi som kan være vanskelig for en uten informasjonsteknisk bakgrunn å forstå, som 'tag', 'index', 'header', 'attribute' og så videre. Jeg kunne lagt til en ekstra artikkel eller aside med forklaringer av terminologi, eller latt brukeren hovre over teksten og få en definisjon til å poppe opp, men dette involverer at jeg først må gjennomgå en undersøkelse for å få en reell forståelse for hva en gjennomsnittlig person forstår og ikke forstår av innholdet mitt, og siden denne siden hovedsaklig er ment til å bli lest av folk med god teknisk forståelse, velger jeg å ikke legge mye tid til å gjøre dette. Dette er definitivt noe jeg kan vurdere i fremtiden.
@@ -166,13 +188,13 @@
                 Regel 5 sier at man skal prøve så godt man kan å forhindre at brukeren kan gjøre noe feil på siden din. Jeg la merke til at på skjemaet på kontakt-siden har man muligheten til å endre størrelse på meldings-boksen. Når jeg endret denne til å bli bredere enn jeg hadde satt, så forandret det også på hvor 'send inn' knappen var plassert, og gjorde at nettsiden så styggere ut. Jeg la derfor til en fast bredde på denne boksen slik at brukeren fortsatt kan gjøre den større for å skrive mer tekst, men ikke på en måte som ødelegger designet eller påvirker andre elementer på en negativ måte.
                 </p>
                 <p>Før:</p>
-                <picture id="broken-form">
+                <picture id="broken-form-img">
                     <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_form_broken.png">
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_form_broken.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_form_broken.png" alt="Bilde av en tekstboks som er utvidet til å gå utenfor rammene til en artikkel. Send Inn knapp og tekst har blitt flyttet til steder de ikke skal være også.">
                 </picture>
                 <p>Etter:</p>
-                <picture id="broken-form">
+                <picture id="fixed-form-img">
                     <source media="(min-width:800px)" srcset="analyse_bilder/large/onlineimageresize_com_form_normal.png">
                     <source media="(min-width:500px)" srcset="analyse_bilder/medium/onlineimageresize_com_form_normal.png">
                     <img src="analyse_bilder/small/onlineimageresize_com_form_normal.png" alt="Bilde av at den samme tekstboksen har fått en fast bredde.">
@@ -180,10 +202,31 @@
                 <p>
                 Regel 7 sier at det er greit å la nettsiden være lett navigerbar ved bruk av f.eks snarveier. Under en forelesning lærte vi om at det var flere som synes det er lettere å navigerte gjennom nettsider ved bruk av tab-knappen på tastaturet istedenfor ved bruk av en datamus, så jeg la til en knapp som kun er synlig for disse brukerene og lar deg hoppe over navigasjon som krever at man trykker tab-knappen flere ganger. Jeg la det til for lenkene i header-seksjonen, og før kartet på kontakt-siden som har flere knapper og lenker man må 'tabbe' seg gjennom. Hvordan jeg gjorde dette fant jeg ut på <a href="https://css-tricks.com/how-to-create-a-skip-to-content-link/">denne nettsiden.</a>
                 </p>
+                <div id="skip-image-parent">
+                    <img src="bildebank/navigasjon_skip_lenke.png" alt="Bilde av hvordan knappen som lar deg hoppe over navigasjon ser ut. Den er grønn med en tekst der det står 'Hopp over Navigasjon?'.">
+                </div>
                 <h3>Avsluttende</h3>
                 <p>
-                Gjennom denne analysen har jeg fått lært mye om bruk av forskjellige analyse-verktøy, og hvor mye baktanke må til selv for en relativt enkel nettside som dette. Spessielt Lighthouse var veldig hjelpsomt ettersom at den lenket til god informasjon som var rettet mot å fikse nøyaktig de problemene jeg hadde på siden. Det er et verktøy jeg definitivt kommer til å ta bruk av i fremtiden, og denne analysen har virkelig hjulpet meg å forbedre nettsiden min.
+                Gjennom denne analysen har jeg fått lært mye om bruk av forskjellige analyse-verktøy, og hvor mye baktanke som må til selv for en relativt enkel nettside som dette. Spesielt Lighthouse var et veldig hjelpsomt verktøy da den lenket til god informasjon som var rettet mot å fikse problemene som oppstod på siden. Det er et verktøy jeg definitivt kommer til å ta bruk av i fremtiden. Denne analysen har virkelig hjulpet meg å forbedre nettsiden min.
                 </p>
+                <p>
+                    Mine lighthouse resultater for mobil versjonen av nettsiden min gikk fra:
+                </p>
+                <ul>
+                    <li>74 i Ytelse / Performance</li>
+                    <li>95 i Tilgjenglighet / Accessibility</li>
+                    <li>92 i Beste praksis / Best Practices</li>
+                    <li>92 i Søkemotoroptimalisering / SEO</li>
+                </ul>
+                <p>Til:</p>
+                <ul>
+                    <li>74 i Ytelse / Performance</li>
+                    <li>95 i Tilgjenglighet / Accessibility</li>
+                    <li>92 i Beste praksis / Best Practices</li>
+                    <li>92 i Søkemotoroptimalisering / SEO</li>
+                </ul>
+
+
                 <h2>Lyst til å dele denne artikkelen?</h2>
                 <div class="sharing-buttons">
                     <a href="#" class="fa-brands fa-twitter" aria-label="Delingsknapp for Twitter"></a>
