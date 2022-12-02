@@ -226,18 +226,13 @@ picture img{
 }
 
 #wave-in-browser img{
-    width: 680px;
-    height: 715px;
+    width: 330px;
+    height: 347px;
 }
 
 #color-picker img{
     width: 680px;
     height: 632px;
-}
-
-#wave-analyse-list img{
-    width: 680px;
-    height: 558px;
 }
 
 #link-spacing-after img{
@@ -246,8 +241,8 @@ picture img{
 }
 
 #wave-analyse-list img{
-    width: 680px;
-    height: 214px;
+    width: 330px;
+    height: 271px;
 }
 
 #image-resizing-html img{
